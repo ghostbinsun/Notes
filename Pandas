@@ -1,0 +1,13 @@
+import os
+print(os.getcwd()) 
+# get the path where you saved the file; os = operating system; cwd = current working directionary
+
+# rename a column in python
+rename(columns = {key: items})， 当rename时，columns把之前的旧columns名 和 新columns名替换，以dictionary的方式换。
+所以如果有个新的list，那么要先把它转换成dictionary, e.g. oldname = [xxxx], newname = [xxxx] --->>> zip(oldname, newname)转成一个list，--->>> dict(zip(oldname, newname))把一个list转成一个dict
+
+# ignore_index = True
+df.append(df2, ignore_index = True) 
+df 和df2的index 如果重叠的话 比如， 0,1,2， 然后又0，1,2， 那么就ignore index = True, 这样的话结果就是0,1,2,3,4,5
+https://www.geeksforgeeks.org/python-pandas-dataframe-append/
+
